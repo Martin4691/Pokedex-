@@ -25,19 +25,23 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npD-na-jBy">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
-                                        <color key="backgroundColor" white="0.35348762700000003" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ina-S5-b1c"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Pokedex!">
+                                            <color key="titleColor" red="0.97265392541885376" green="0.95052915811538696" blue="0.9098162055015564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezG-CC-HTr">
                                         <rect key="frame" x="0.0" y="95" width="150" height="50"/>
-                                        <color key="backgroundColor" white="0.35348762700000003" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="tXC-SC-Cz6"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="GitHub">
+                                            <color key="titleColor" red="0.97265392541885376" green="0.95052915811538696" blue="0.9098162055015564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="CYP-Oe-cPv" kind="popoverPresentation" popoverAnchorView="ezG-CC-HTr" id="T8q-IB-4h8">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -46,11 +50,13 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1C-ex-57j">
                                         <rect key="frame" x="0.0" y="190" width="150" height="50"/>
-                                        <color key="backgroundColor" white="0.35348762700000003" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="BE2-RQ-ncl"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="LinkedIn">
+                                            <color key="titleColor" red="0.97265392541885376" green="0.95052915811538696" blue="0.9098162055015564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="wDF-Zp-uwK" kind="popoverPresentation" popoverAnchorView="e1C-ex-57j" id="Td5-L4-cYe">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -64,8 +70,10 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJB-Os-xm4">
                                 <rect key="frame" x="112.5" y="637" width="150" height="30"/>
-                                <color key="backgroundColor" white="0.35348762700000003" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="FwM-FF-87b" kind="presentation" modalTransitionStyle="crossDissolve" id="Rgp-T9-Ef5"/>
                                 </connections>
@@ -88,6 +96,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eQv-Ea-pbR"/>
+                    <connections>
+                        <outlet property="gitHubButton" destination="ezG-CC-HTr" id="oKu-qr-mGF"/>
+                        <outlet property="linkedInButton" destination="e1C-ex-57j" id="YBo-fJ-ZzM"/>
+                        <outlet property="misteryButton" destination="zJB-Os-xm4" id="CRQ-zj-2ED"/>
+                        <outlet property="pokedexButton" destination="npD-na-jBy" id="UUB-ar-n6W"/>
+                        <outlet property="welcomeView" destination="8bC-Xf-vdC" id="nIT-rT-Ib6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -281,6 +296,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

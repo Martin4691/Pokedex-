@@ -6,7 +6,7 @@ target 'Pokedex!' do
   use_frameworks!
 
 	pod 'Alamofire', '~> 4.7'
-	pod 'PokemonAPI'
+	
 
 
   # Pods for Pokedex!
