@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - PokemonAPI (6.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - PokemonAPI
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PokemonAPI
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  PokemonAPI: bff9656c1825288e7f028b415ce6276122ad4c6a
+
+PODFILE CHECKSUM: c98ebf4c383a245d7ece4490983e24af3515c87f
+
+COCOAPODS: 1.10.1
