@@ -1,9 +1,9 @@
 PODS:
-  - Alamofire (4.9.1)
+  - Alamofire (5.4.3)
   - PokemonAPI (6.0.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.7)
+  - Alamofire
   - PokemonAPI
 
 SPEC REPOS:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - PokemonAPI
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   PokemonAPI: bff9656c1825288e7f028b415ce6276122ad4c6a
 
-PODFILE CHECKSUM: c98ebf4c383a245d7ece4490983e24af3515c87f
+PODFILE CHECKSUM: 60f47f6e14ab15f2b1b3cca271c11c104ad924ea
 
 COCOAPODS: 1.10.1

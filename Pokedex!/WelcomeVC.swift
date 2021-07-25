@@ -17,31 +17,65 @@ class WelcomeVC: UIViewController {
     @IBOutlet weak var linkedInButton: UIButton!
     @IBOutlet weak var misteryButton: UIButton!
     
+    @IBOutlet weak var bigL: UILabel!
+    @IBOutlet weak var redL: UILabel!
+    @IBOutlet weak var yellowL: UILabel!
+    @IBOutlet weak var greenL: UILabel!
+    @IBOutlet weak var screenView: UIImageView!
+    @IBOutlet weak var markImageView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.isNavigationBarHidden = true
         
-        welcomeView.layer.borderWidth = 20.0
-        welcomeView.layer.borderColor = UIColor.red.cgColor
+        markImageView.layer.cornerRadius = 20
+        markImageView.layer.borderColor = UIColor.black.cgColor
+        markImageView.layer.borderWidth = 3
         
-        pokedexButton.layer.cornerRadius = 10
-        pokedexButton.layer.borderWidth = 10
-        pokedexButton.layer.borderColor = UIColor.black.cgColor
+        pokedexButton.layer.cornerRadius = 20
         linkedInButton.layer.cornerRadius = 10
-        linkedInButton.layer.borderWidth = 10
-        linkedInButton.layer.borderColor = UIColor.black.cgColor
         gitHubButton.layer.cornerRadius = 10
-        misteryButton.layer.borderWidth = 10
-        misteryButton.layer.borderColor = UIColor.black.cgColor
-        misteryButton.layer.cornerRadius = 10
-        misteryButton.layer.borderWidth = 10
-        misteryButton.layer.borderColor = UIColor.black.cgColor
+        misteryButton.layer.cornerRadius = 25
         
+        bigL.layer.cornerRadius = 25
+        bigL.layer.masksToBounds = true
+        bigL.layer.borderColor = UIColor.black.cgColor
+        bigL.layer.borderWidth = 3
+        
+        redL.layer.cornerRadius = 25
+        redL.layer.masksToBounds = true
+        redL.layer.borderColor = UIColor.black.cgColor
+        redL.layer.borderWidth = 1
+        
+        yellowL.layer.cornerRadius = 25
+        yellowL.layer.masksToBounds = true
+        yellowL.layer.borderColor = UIColor.black.cgColor
+        yellowL.layer.borderWidth = 1
+        
+        greenL.layer.cornerRadius = 25
+        greenL.layer.masksToBounds = true
+        greenL.layer.borderColor = UIColor.black.cgColor
+        greenL.layer.borderWidth = 1
+        
+        gitHubButton.layer.borderColor = UIColor.black.cgColor
+        gitHubButton.layer.borderWidth = 1
+        linkedInButton.layer.borderColor = UIColor.black.cgColor
+        linkedInButton.layer.borderWidth = 1
+        
+        pokedexButton.layer.borderColor = UIColor.black.cgColor
+        pokedexButton.layer.borderWidth = 3
         
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    
+    
 
 }
 
